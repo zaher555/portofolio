@@ -1,0 +1,80 @@
+
+.card
+{
+  background-color: black;
+}
+.card h5
+{
+  color: #FFBD39
+}
+.card span
+{
+  color: #FFBD39;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.card .text
+{
+  font-size: 4rem;
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p
+{
+  font-size: 2rem;
+}
+.resume
+{
+  background-color: #FFBD39;
+  color: black;
+  text-decoration: none;
+  width: 200px;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+.resume:hover::after
+{
+  width: 100%;
+}
+.resume::after
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #FFBD39;
+  z-index: 4;
+  opacity: .5;
+}
+.image
+{
+  background-color: #FFBD39;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+hr
+{
+  color: #FFBD39;
+  width: 80%;
+  margin-left: 10%;
+}
+/* Typing effect cursor */
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: white; }
+  100% { border-color: transparent; }
+}
+
+.card-text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.75s step-end infinite;
+}
